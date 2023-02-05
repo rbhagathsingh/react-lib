@@ -1,0 +1,93 @@
+{
+	"name": "@ProofPilot/fegeneric-react",
+	"version": "1.0.10",
+	"description": "A collection of reusable React components, written in TypeScript",
+	"main": "dist/cjs/index.js",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/@ProofPilot"
+	},
+	"module": "dist/esm/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist",
+		"package.json",
+		"README.md"
+	],
+	"private": false,
+	"scripts": {
+		"rollup-watch": "rollup -c -w",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook",
+		"build": "npm run clean &&  rollup -c",
+		"clean": "rimraf dist"
+	},
+	"keywords": [
+		"react",
+		"typescript"
+	],
+	"devDependencies": {
+		"@babel/core": "^7.17.8",
+		"@emotion/react": "^11.10.5",
+		"@emotion/styled": "^11.10.5",
+		"@mui/material": "^5.11.0",
+		"@mui/styled-engine-sc": "^5.11.0",
+		"@reduxjs/toolkit": "^1.9.1",
+		"@rollup/plugin-commonjs": "^21.0.1",
+		"@rollup/plugin-json": "^5.0.2",
+		"@rollup/plugin-node-resolve": "^13.1.3",
+		"@rollup/plugin-terser": "^0.2.0",
+		"@rollup/plugin-typescript": "^8.3.3",
+		"@transifex/react": "^5.0.2",
+		"@types/lodash": "^4.14.191",
+		"@types/react": "^18.0.12",
+		"@types/react-dom": "^18.0.5",
+		"autoprefixer": "^10.4.7",
+		"axios": "^1.2.1",
+		"babel-loader": "^8.2.4",
+		"clean-css": "^5.3.1",
+		"lodash": "^4.17.21",
+		"node-sass": "^8.0.0",
+		"postcss": "^8.4.14",
+		"prop-types": "^15.8.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-hook-form": "^7.40.0",
+		"react-redux": "^8.0.5",
+		"react-router-dom": "^6.4.5",
+		"rollup": "^2.67.0",
+		"rollup-plugin-copy": "^3.4.0",
+		"rollup-plugin-dts": "^4.1.0",
+		"rollup-plugin-peer-deps-external": "^2.2.4",
+		"rollup-plugin-postcss": "^4.0.2",
+		"rollup-plugin-sass": "^1.12.17",
+		"rollup-plugin-typescript2": "^0.34.1",
+		"sass": "^1.56.2",
+		"storybook-css-modules": "^1.0.7",
+		"tslib": "^2.4.1",
+		"typescript": "^4.5.5"
+	},
+	"peerDependencies": {
+		"@emotion/react": "^11.10.5",
+		"@emotion/styled": "^11.10.5",
+		"@mui/material": ">=5.11.0",
+		"@mui/styled-engine-sc": ">=5.11.0",
+		"axios": ">=1.2.1",
+		"bootstrap": "^5.2.3",
+		"lodash": ">=4.17.21",
+		"react": ">=18.2.0",
+		"react-dom": ">=18.2.0",
+		"react-hook-form": ">=7.40.0",
+		"react-router-dom": ">=6.4.5",
+		"usehooks-ts": "^2.9.1",
+		"@reduxjs/toolkit": "^1.9.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:ProofPilot/FEGeneric-React.git"
+	},
+	"license": "MIT",
+	"browser": {
+		"assert": false
+	},
+	"dependencies": {}
+}
